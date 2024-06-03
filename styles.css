@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Silkscreen:wght@400;700&display=swap');
+
+body {
+        font-family: "Jersey 10", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+        background-image: url('img.jpg'); 
+        background-size: cover;
+        font-size: 30px;
+      }
+      
+
+
+#seleccionar-mascota {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center
+}
+.title {
+    color: aquamarine;
+    -webkit-text-stroke: 1px #0fc4e4;
+    text-shadow: 1px 7px 3px rgba(84, 3, 92, 0.4)
+
+}
+
+.subtitulo {
+    color: aquamarine;
+    font-size: 51px;
+    -webkit-text-stroke: 0px #0fc4e4;
+    text-shadow: 1px 7px 3px rgba(84, 3, 92, 0.4)
+    
+
+}
+.tarjetas, .tarjetas-ataque {
+    display: flex;
+    gap: 10px;
+
+}
+    
+
+.tarjeta-de-mokepon {
+    width: 281px;
+    height: 163px;
+    padding: 10px;
+    background-image: linear-gradient(rgb(31, 188, 216), rgb(236, 76, 210));
+    box-sizing: border-box;
+    margin: 70px;
+    border: 5px solid #A3FFD6;
+    border-radius: 5px;
+    display: flex;
+    color: #1C1678;
+    cursor: pointer;
+
+}
+
+.tarjeta-de-mokepon img {
+    width: 200px;
+}
+
+#boton-mascota {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 800;
+    font-size: larger;
+    font-style: normal;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background: darkviolet;
+    border: 2px solid blueviolet;
+    color: skyblue;
+    margin: 20px;
+    cursor: pointer;
+    background-image: linear-gradient(rgb(11, 177, 206), rgb(216, 22, 190));
+}
+
+#boton-reiniciar {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 800;
+    font-size: larger;
+    font-style: normal;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background: rgb(9, 226, 197);
+    border: 3px solid blueviolet;
+    color: #96E9C6;
+    margin: 20px;
+    cursor: pointer;
+    background-image: linear-gradient(#6C22A6, #6962AD);
+}
+
+input {
+    display: none;
+}
+
+input:checked+label {
+background-image: linear-gradient(rgb(230, 21, 177), rgb(15, 158, 224));
+}
+
+#seleccionar-ataque {
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-fuego {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 800;
+    font-size: inherit;
+    font-style: normal;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background: rgb(9, 226, 197);
+    border: 3px solid blueviolet;
+    color: #e3e04f;
+    margin: 20px;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #df1111, #ffbf60);
+}
+
+.boton-de-agua {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 800;
+    font-size: inherit;
+    font-style: normal;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background: rgb(9, 226, 197);
+    border: 3px solid blueviolet;
+    color: #465bf9;
+    margin: 20px;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #0fdde4, #3f65cc);
+}
+
+.boton-de-planta {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 800;
+    font-size: inherit;
+    font-style: normal;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background: rgb(9, 226, 197);
+    border: 3px solid blueviolet;
+    color: #ff45ef;
+    margin: 20px;
+    cursor: pointer;
+    background-image: linear-gradient(45deg, #21f53d, #06ebc5);
+}
+
+#mensajes {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: initial;
+    font-size: unset;
+    font-style: normal;
+    width: 268px;
+    height: 113px;
+    border-radius: 10px;
+    background: rgb(9, 226, 197);
+    border: 10px solid blueviolet;
+    color: #96E9C6;
+    margin: 30px;
+    cursor: pointer;
+    background-image: linear-gradient(#6C22A6, #6962AD);
+    display: flex;
+    align-items: flex-start;
+    padding: unset;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+@media (max-width: 500px) {
+    .tarjetas, .tarjetas-ataque {
+        flex-direction: column;
+    }
+}
